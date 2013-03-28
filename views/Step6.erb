@@ -1,0 +1,55 @@
+<h3>Selenium Webdriver vs Selenium RC</h3>
+
+<p><img src="http://codesandtags.org/wp-content/uploads/2011/11/SeleniumWebDriver.png" alt="image" /></p>
+ <div class="row">
+ <div class="span9">
+<table class="table table-bordered table-striped">
+	<thead>
+<tr>
+<th align="left"> Selenium WebDriver </th>
+<th align="left"> Selenium RC </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"> Interacts natively with browser application       </td>
+<td align="left">        Works like an agent in the middleside </td>
+</tr>
+<tr>
+<td align="left"> Works on all popular Browsers       </td>
+<td align="left">        Works on almost browsers. </td>
+</tr>
+<tr>
+<td align="left"> No Selenium Server required     </td>
+<td align="left">      Selenium Server is required to start </td>
+</tr>
+<tr>
+<td align="left"> Purely Object oriented API         </td>
+<td align="left">          Less Object oriented API </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="row">
+	<div class="Span3">
+<ul>
+<li><p>Scripts with Selenium Webdriver</p>
+
+<pre><code>@driver.get(@base_url + "/")
+@driver.find_element(:id, "sb_form_q").clear
+@driver.find_element(:id, "sb_form_q").send_keys "Selenium"
+@driver.find_element(:id, "sb_form_go").click
+@driver.find_element(:link, "Selenium - Web Browser Automation").click
+</code></pre></li>
+<li><p>Scrips with Selenium RC</p>
+
+<pre><code>page.open "/"
+page.type "id=sb_form_q", "Selenium"
+page.click "id=sb_form_go"
+page.wait_for_page_to_load "30000"
+page.click "link=Selenium - Web Browser Automation"
+</code></pre></li>
+</ul>
+</div>
+</div>

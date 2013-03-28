@@ -1,0 +1,151 @@
+   
+<div class="row" style="border: 1px solid #E1E1E8"  id="example">
+  <div class="span3">
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Bing</th>
+          <td><a href="#" id="linkToBing">Open</a></td>
+        </tr>
+        <tr>
+          <th>Google</th>
+          <td><a href="#">Open</a></td>
+        </tr>
+        <tr>
+          <th>Baidu</th>
+          <td><a href="#">Open</a></td>
+        </tr>
+        <tr>
+          <th>Yahoo</th>
+          <td><a href="#">Open</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="span7">
+    <form class="form-horizontal">
+      <fieldset>
+        <div class="control-group">
+          <label class="control-label" for="input01">Text input</label>
+          <div class="controls">
+            <input type="text" class="input-xlarge" id="input01">
+            <p class="help-block">In addition to freeform text, any HTML5 text-based input appears like so.</p>
+          </div>
+        </div>
+        <div class="control-group" id="radioGroups">
+          <label class="control-label" for="radioGroups">Gender</label>
+          <div class="controls">
+            <label class="radio">
+              <input type="radio" id="optionsRadioMale" >MALE</input>
+            </label>
+          </div>
+          <div class="controls">
+            <label class="radio">
+              <input type="radio" id="optionsRadioFemale">FEMALE</input>
+            </label>
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="optionsCheckbox">Checkbox</label>
+          <div class="controls">
+            <label class="checkbox">
+              <input type="checkbox" id="optionsCheckbox" value="option1">Option one is this and that—be sure to include why it's great</input>
+            </label>
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="select01">Select list</label>
+          <div class="controls">
+            <select id="select01">
+              <option>something</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="multiSelect">Multicon-select</label>
+          <div class="controls">
+            <select multiple="multiple" id="multiSelect">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+        </div>
+        <div class="control-group">
+
+          <label class="control-label" for="fileInput">File input</label>
+          <div class="controls">
+            <input class="input-file" id="fileInput" type="file">
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="textarea">Textarea</label>
+          <div class="controls">
+            <textarea class="input-xlarge" id="textarea" rows="3"></textarea>
+          </div>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Save changes</button>
+          <button class="btn">Cancel</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</div>
+<section class='page-header'>
+        <label class="control-label" for="inputXPath" >Input your xpath
+        <input type="text" class="input-xlarge span5" id="inputXPath"></input>
+        </label>
+        <button class="btn btn-primary " id="checkXPath" type="submit" onclick="test()">Try XPath</input>
+        <button class="btn " id="clearXPath" type="submit" onclick="clear()">Clear</input>
+</section> 
+
+
+<script type="text/javascript">
+  function test() 
+    { 
+      xpathExpression = document.getElementById("inputXPath").value 
+      alert(xpathExpression)
+      var nodes = document.evaluate("//div[@id='example']"+xpathExpression, document, null,XPathResult.ANY_TYPE, null);
+
+      try {
+        var thisNode = nodes.iterateNext();
+         
+        while (thisNode) {
+          // alert( thisNode.nodeName );
+          div = document.createElement('div')
+          div.style.backgroundColor='red'
+          // div = thisNode.parentNode.appendChild(div)
+          thisNode.parentElement.style.backgroundColor='yellow'
+          thisNode.style.display = 'none'
+          alert(thisNode.textContent)
+          thisNode = nodes.iterateNext();
+
+        } 
+      }
+      catch (e) {
+        dump( 'Error: Document tree modified during iteration ' + e );
+      }
+
+
+    } 
+
+</script>
+
+
+
+
+
+
