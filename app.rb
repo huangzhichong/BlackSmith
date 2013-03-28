@@ -2,7 +2,6 @@
 
 require 'rubygems'
 require 'sinatra'
-require 'active_record'
 # require_relative 'models.rb'
 module Sinatra
   module RenderPartial
