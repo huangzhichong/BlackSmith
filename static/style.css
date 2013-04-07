@@ -70,13 +70,7 @@ img.aligncenter {
 #wrapper {
 	background: url(images/img02.jpg) no-repeat center top;
 }
-<<<<<<< HEAD
-#wallpaper {
-	background: url(images/img02.jpg) no-repeat center top;
-}
-=======
 
->>>>>>> 1c71812a6bc4a88b0474f6fe46d451f1e1903d8d
 /* Header */
 
 #header {
@@ -170,7 +164,7 @@ img.aligncenter {
 	float: left;
 	height: 43px;
 	margin-right: 3px;
-	padding: 20px 25px 0px 25px;
+	padding: 20px 20px 0px 20px;
 	text-decoration: none;
 	text-transform: lowercase;
 	text-shadow: 1px 1px 2px #4D5A1C;

@@ -35,11 +35,22 @@ get '/' do
   erb :index
 end
 
-get '/example' do
-  erb :slider
+get '/about' do
+  erb :about
 end
 
-get '/step/:id' do
-  erb "Step#{params[:id]}".to_sym
+get '/room' do
+  erb :room
 end
-
+get '/facilities' do
+  erb :facilities
+end
+get '/navigation' do
+  erb :navigation
+end
+get '/neighborhood' do
+  erb :neighborhood
+end
+get '/booking' do
+  erb :booking
+end
