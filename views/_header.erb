@@ -1,16 +1,26 @@
+<script language="JavaScript" type="text/javascript">
+	$(document).ready(function(){
+		var pathname = window.location.pathname
+		var current_item = pathname.replace('/','')
+		$("#"+current_item).addClass('current_page_item')
+		$("#home").removeClass('current_page_item')
+	});
+</script>
+
 <div id="header">
 	<div id="logo">
 		<h1><a href="/">BlackSmith Hostel</a></h1>
 	</div>
 </div>
+
 <div id="menu">
 	<ul>
-		<li class="current_page_item"><span><a href="/">Home</a></span></li>
-		<li><a href="/about">About Us</a></li>
-		<li><a href="/room">Room & Rate</a></li>
-		<li><a href="/facilities">Service & Facilities</a></li>
-		<li><a href="/navigation">Navigation</a></li>
-		<li><a href="/neighborhood">Neighborhood</a></li>
-		<li><a href="/booking">BOOK NOW</a></li>
+		<li id="home" class="current_page_item"><span><a href="/">Home</a></span></li>
+		<li id="about"><a href="/about">About Us</a></li>
+		<li id="room"><a href="/room">Room & Rate</a></li>
+		<li id="facilities"><a href="/facilities">Service & Facilities</a></li>
+		<li id="navigation"><a href="/navigation">Navigation</a></li>
+		<li id="neighborhood"><a href="/neighborhood">Neighborhood</a></li>
+		<li id="booking"><a href="/booking">BOOK NOW</a></li>
 	</ul>
 </div>
