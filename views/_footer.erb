@@ -1,6 +1,15 @@
 <div id="footer">
+<% case session[:localization] %>
+<% when "ch" %>
+<p>成都铁器社青年旅社</p>
+<p>成都市文化路10号</p>
+<p>www.blacksmithhostel@gmail.com</p>
+<p>028-87791376</p>
+<% else %>
 <p>Chengdu BlackSmith Hostel</p>
 <p>No. 10 Wen Hua Road, Chengdu, China</p>
 <p>www.blacksmithhostel@gmail.com</p>
-<p>86-28-87791376</p>
+<p>86-28-87791376</p><h1>English !!!</h1>
+<% end %>	
 </div>
+

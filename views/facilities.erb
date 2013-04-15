@@ -1,3 +1,68 @@
+<% case session[:localization] %>
+<% when "ch" %>
+<div id="content">
+	<div id="CafeBar" class="post">
+		<h2 class="title"><a href="#CafeBar">咖啡厅/酒吧</a></h2>
+		<div class="entry">
+			<p><img src="images/cafebar.jpg" width="540" height="300" alt="" /></p>
+			<p>Sed lacus. Donec lectus. Nullam pretium nibh ut turpis. Nam bibendum. In nulla tortor, elementum ipsum. Proin imperdiet est. Phasellus dapibus semper urna. Pellentesque ornare, orci in felis. Donec ut ante. In id eros turpis, cursus egestas at sem.</p>
+		</div>
+	</div>
+	<div id ="BBQ" class="post">
+		<h2 class="title"><a href="#BBQ">BBQ活动区<a></h2>
+		<div class="entry">
+			<p><img src="images/bbq.jpg" width="540" height="300" alt="" /></p>
+			<p>Sed lacus. Donec lectus. Nullam pretium nibh ut turpis. Nam bibendum. In nulla tortor, elementum ipsum. Proin imperdiet est. Phasellus dapibus semper urna. Pellentesque ornare, orci in felis. Donec ut ante. In id eros turpis, cursus egestas at sem.</p>
+		</div>
+	</div>
+	<div class="post">
+		<h2 id="Pool" class="title"><a href="#Pool">台球</a></h2>
+		<div class="entry">
+			<p><img src="images/pooltable.jpg" width="540" height="300" alt="" /></p>
+			<p>Sed lacus. Donec lectus. Nullam pretium nibh ut turpis. Nam bibendum. In nulla tortor, elementum ipsum. Proin imperdiet est. Phasellus dapibus semper urna. Pellentesque ornare, orci in felis. Donec ut ante. In id eros turpis, cursus egestas at sem.</p>
+		</div>
+	</div>
+	<div style="clear: both;">&nbsp;</div>
+</div>
+<!-- end #content -->
+<div id="sidebar">
+	<ul>
+		<li>
+			<h3>免费设施&服务</h3>
+			<ul>
+				<li><a>Wifi</a></li>
+				<li><a>上网电脑</a></li>
+				<li><a>设施完备的厨房</a></li>
+				<li><a>DVD室</a></li>
+				<li><a>24小时热水</a></li>
+				<li><a>吹风机</a></li>
+				<li><a>空调</a></li>
+				<li><a>停车位</a></li>
+				<li><a href="#BBQ">BBQ活动区</a></li>
+				<li><a>乒乓球</a></li>
+				<li><a href="#Pool">台球</a></li>
+				<li><a>桌上足球</a></li>
+				<li><a>旅游咨询台</a></li>
+				<li><a>寄信/明信片</a></li>
+				<li><a>行李储存</a></li>
+			</ul>
+		</li>
+		<li>
+			<h3>付费设施&服务</h3>
+			<ul>
+				<li><a>机场/火车站接送</a></li>
+				<li><a>火车票预订</a></li>
+				<li><a>旅游</a></li>
+				<li><a href="#CafeBar">咖啡厅/酒吧</a></li>
+				<li><a>自行车出租</a></li>
+				<li><a>自助洗衣</a></li>
+				<li><a>传真</a></li>
+				<li><a>打印</a></li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<% else %>
 <div id="content">
 	<div id="CafeBar" class="post">
 		<h2 class="title"><a href="#CafeBar">Cafe & Bar</a></h2>
@@ -59,5 +124,6 @@
 		</li>
 	</ul>
 </div>
+<% end %>
 <!-- end #sidebar -->
 <div style="clear: both;">&nbsp;</div>

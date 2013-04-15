@@ -8,7 +8,7 @@ module Sinatra
       erb page, options.merge!(:layout => false)
     end
   end
- 
+
   helpers RenderPartial
 end
 
@@ -17,19 +17,23 @@ configure do
   enable :sessions
 end
 
-# helpers do
-#   def username
-#     session[:identity] ? session[:identity] : 'Hello stranger'
-#   end
-# end
+before do
+  # session[:localization] = "en"
+end
 
-# before '/secure/*' do
-#   if !session[:identity] then
-#     session[:previous_url] = request['REQUEST_PATH']
-#     @error = 'Sorry guacamole, you need to be logged in to do that'
-#     halt erb(:login_form)
-#   end
-# end
+not_found do
+erb :not_found
+end
+
+get '/english' do
+  session[:localization] = "en"
+  redirect "/"
+end
+
+get '/chinese' do
+  session[:localization] = "ch"
+  redirect "/"
+end
 
 get '/' do
   erb :index

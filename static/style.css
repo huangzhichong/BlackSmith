@@ -78,6 +78,14 @@ img.aligncenter {
 	height: 125px;
 	margin: 0 auto;
 }
+#language{
+	padding-left: 800px;
+	padding-top: 100px;
+	color: #FFFFFF
+}
+#language a{
+	color: #FFFFFF
+}
 
 #logo {
 	float: left;

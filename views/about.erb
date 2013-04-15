@@ -2,40 +2,52 @@
 	<div id="page">
 		<div id="content_wide">
 			<div class="post">
-			<img src="images/img08.jpg" class="photo" alt="" />
+			<img src="images/about_us.jpg" class="photo" alt="about-us" />
 			</div>
 		</div>	
 
 		<div id = "content_wide">
 			<div class="post">
-				<h2 class="title"><a href="#">About us</a></h2>
-				<p class="subtitle">Welcome to Blacksmith Hostel! (NEWLY OPENED)</p>
-				<div class="entry">
+<% case session[:localization] %>
+<% when "ch" %>
+<h2 class="title"><a href="#">关于我们</a></h2>
+<p class="subtitle">欢迎光临铁器社(NEWLY OPENED)</p>
+<div class="entry">
+  <P>铁器社由一群爱生活，爱旅游的80后按照自己梦想中的青年客栈打造。旨在为同样热爱旅行的朋友提供一个安全、温馨的家；一个年轻朋友交流休息的场所；一个结伴出行的平台。</P>  
+  <p>铁器社位于成都市中心，旅社地理位置优越，紧邻成都地铁二号线白果林站，经此到天府广场仅需十分钟，可直达成都火车东站、北站和主要汽车站，前往成都市内各著名景点仅需20分钟。旅社紧靠生活社区，生活设施齐备方便。</p>
 
-					<p><strong>Great location:</strong></p>
+  <p>我们热情好客的工作人员，会尽力解答您的各类问题，贴心的服务更能为你的成都之行提供便利。全新装修的房间，舒适而温馨。宽带网络连接到各个房间，院坝和公共活动室也有无线网络覆盖。我们还在大厅里准备了免费上网区为不曾携带电脑的朋友提供方便。喜欢睡前阅读的你能在我们前台借到各种类型的休闲读物。专门的洗衣房和晾衣台为您洗去一路风尘，热水24小时不间断供应。如果您累了，就去我们的院子里坐坐吧，在茂密的梧桐和碧绿的翠竹下，和来自各地的朋友谈天说地，听琴喝茶，梳理情绪，忘却烦恼。</p>
+  <p>欢迎您莅临铁器社，游览美丽的成都，慢慢体会这座城市的繁华与安详，体会成都人民悠闲慵懒的生活节奏，收获友谊，不虚此行。</p>
+</div>
+<% else %>	
+<h2 class="title"><a href="#">About us</a></h2>
+<p class="subtitle">Welcome to Blacksmith Hostel! (NEWLY OPENED)</p>
+<div class="entry">
+  <p><strong>Great location:</strong></p>
 
-					<p>We are ideally located in the central area of Chengdu, less than 5-minute walking distance to Bai Guo Lin metro station (line 2), providing you fast and easy access to the rest of the city. We are also very near (300 meters away) 1st Ring Road, the most important traffic circus in Chengdu, from where you have easy access to all hotspots in Chengdu by bus.</p>
+  <p>We are ideally located in the central area of Chengdu, less than 5-minute walking distance to Bai Guo Lin metro station (line 2), providing you fast and easy access to the rest of the city. We are also very near (300 meters away) 1st Ring Road, the most important traffic circus in Chengdu, from where you have easy access to all hotspots in Chengdu by bus.</p>
 
-					<p><strong>Newly renovated rooms:</strong></p>
+  <p><strong>Newly renovated rooms:</strong></p>
 
-					<p>We provide upmarket accommodation for backpackers and budget travelers. Here you’ll find newly renovated, spacious, clean, tastefully decorated rooms combined with a personal and warm atmosphere.</p>
+  <p>We provide upmarket accommodation for backpackers and budget travelers. Here you’ll find newly renovated, spacious, clean, tastefully decorated rooms combined with a personal and warm atmosphere.</p>
 
-					<p>We’ve got air-conditioning in every room, and all the rooms have high ceilings and wooden floors.</p>
+  <p>We’ve got air-conditioning in every room, and all the rooms have high ceilings and wooden floors.</p>
 
-					<p>All dorm rooms feature individual bed curtain, reading light, electrical outlet, secure swipe card and big locker (please bring your own padlock or you can buy one from our reception). We also provide fresh linen upon your arrival for free. More importantly, our unique private communal bathrooms act as a personal ensuite, meaning soaping up with a fellow traveler is optional.</p>
+  <p>All dorm rooms feature individual bed curtain, reading light, electrical outlet, secure swipe card and big locker (please bring your own padlock or you can buy one from our reception). We also provide fresh linen upon your arrival for free. More importantly, our unique private communal bathrooms act as a personal ensuite, meaning soaping up with a fellow traveler is optional.</p>
 
-					<p>For twin/double rooms, each has a fully equipped ensuite bathroom. Fresh linen and daily housekeeping are provided for free.</p>
+  <p>For twin/double rooms, each has a fully equipped ensuite bathroom. Fresh linen and daily housekeeping are provided for free.</p>
 
-					<p><strong>Various services and facilities:</strong></p>
+  <p><strong>Various services and facilities:</strong></p>
 
-					<p>The awesome garden is a great place to unwind and meet your fellow travelers. Enjoy the big TV/movie lounge and games area with pool table and table tennis. Feast in our fully-equipped self-catering kitchen and dining room. Stay in touch with fast web access at our Internet Cafe. Dance the night away while sampling the wide range of beers, wines and spirits in our stylish garden-view bar.</p>
+  <p>The awesome garden is a great place to unwind and meet your fellow travelers. Enjoy the big TV/movie lounge and games area with pool table and table tennis. Feast in our fully-equipped self-catering kitchen and dining room. Stay in touch with fast web access at our Internet Cafe. Dance the night away while sampling the wide range of beers, wines and spirits in our stylish garden-view bar.</p>
 
-					<p>We also have a travel and information desk with heaps of information on what to see or do in and around Chengdu. Just ask our staff who know all about the area and will be happy to help you choose and book the right activity to suit you. - We really are your one-stop-shop!</p>
+  <p>We also have a travel and information desk with heaps of information on what to see or do in and around Chengdu. Just ask our staff who know all about the area and will be happy to help you choose and book the right activity to suit you. - We really are your one-stop-shop!</p>
 
-					<p>Blacksmith is a combination of international hostel atmosphere, backpackers’ spirit, friendly guests and competent staff, and this will definitely make your stay a wonderful experience.</p>
-				</div>
-			</div>
-			<div style="clear: both;">&nbsp;</div>
+  <p>Blacksmith is a combination of international hostel atmosphere, backpackers’ spirit, friendly guests and competent staff, and this will definitely make your stay a wonderful experience.</p>
+</div>
+</div>
+<% end %>
+
 		</div>
 		<!-- end #content -->
 		</div>
