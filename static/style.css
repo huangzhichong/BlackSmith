@@ -231,7 +231,6 @@ img.aligncenter {
 #content_wide{
 	float: left;
 	width: 950px;
-	margin-bottom: 30px;
 	padding: 0px 0px 0px 0px;
 }
 
@@ -239,6 +238,11 @@ img.aligncenter {
 	float: left;
 	width: 950px;
 	margin-bottom: 30px;
+	background: #FFFFFF
+}
+#content_wide iframe{
+	float: left;
+	padding: 30px 30px 30px 30px;
 	background: #FFFFFF
 }
 .text_left{
