@@ -1,19 +1,138 @@
-<!-- end #menu -->
+<% case session[:localization] %>
+<% when "ch" %>
 <div id="content_wide">
-    <div class="post">
-        <h3 class="title"><a href="#">How to find us,</a></h3>
-        <div class="entry">
-          <p><strong>1.Form the North Train station</strong></p>
-          <p>After you walk out the Train station,turnright way to take bus No.27 get off at Qing Yang Xiao Qu.You will see a supermarket behind of you,and turn right go along wenhua Road,walking about 5minutes.</p>
-          <p><strong>2.From the Airport</strong></p>
-          <p>You can take the airport shuttle bus 303 at the EXITof the airport.Get of at the last stop,It is citycenter then change a taxi(price around 15-20yuan )to Blacksmith.If you take taxi fom airport to our hostel directly,price around 70RMB.</p>
-          <p><strong>3.Pick up service</strong></p>
-          <p>Call us 1 day before to let us arrange the pick up service from airport or train station.</p>
-          <p>Tel:028-87791376 028-87791371</p>
-          <p>Add:N.10Wenhua rd.Baiguolin districe,Chengdu,Sichuan</p>
-        </div>
-    </div>      
+  <div id="north_train" class="post">
+    <h3 class="title"><a href="#north_train">从成都火车北站到铁器社青年旅舍</a></h3>
+    <div class="entry">
+      <p><strong>乘坐公交车:</strong></p>
+      <ul>
+        <li>
+          <p>T走出火车北站，在火车北站公交站东站乘坐１１路公交车，在青羊小区站下车。</p>
+          <p>车费２元（请自备零钱），用时大约２０分钟</p>
+        </li>
+        <li><p>下车后向前走１０米后右转进入文华路。</p></li>
+        <li><p>沿文华路直走大约３００米，您会看见铁器社青旅在您的左边。</p></li>
+      </ul>
+      <p><strong>乘坐出租车:</strong></p>
+      <ul>
+        <li>T请司机带您到文华路１０号，近交警四分局交罚单的地方。</li>
+        <li>大约花费20元，用时15分钟。</li>
+      </ul>
+    </div> 
+  </div>
+
+  <div id="east_train" class="post">
+    <h3 class="title"><a href="#east_train">从成都火车东站到铁器社青年旅舍</a></h3>
+    <div class="entry">
+      <p><strong>乘坐地铁：</strong></p>
+        <ul>
+        <li><p>走出火车东站后，可见成都地铁2号线“成都东客站”入口。乘坐地铁2号线到“白果林”站下车。此时您距离铁器社青旅大约300米。</p></li>
+        <li><p>从C出口出站后，您所在的位置是青西路。请沿青西路直走，在第一个路口左转进入中新路。</p></li>
+        <li><p>请沿中新路直走在第一个路口右转，进入文华路。</p></li>
+        <li><p>请沿文华路直走50米，您将会看见铁器社青年旅舍在您的右边。</p></li>
+        </ul>
+      <p><strong>乘坐出租车:</strong></p>
+      <ul>
+        <li>T请司机带您到文华路１０号，近交警四分局交罚单的地方。</li>
+        <li>大约花费40元，用时40分钟。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id ="airport" class="post">
+    <h3 class="title"><a href="#airport">从成都双流国际机场到铁器社青年旅舍</a></h3>
+    <div class="entry">
+      <p><strong>接机服务：</strong></p>
+      <ul>
+      <li>请通过电话或邮件预定接机服务。我们将在机场出口等您。</li>
+      <li>接机服务为70元每次每车。车为小型面包车，最多坐6人。</li>
+      </ul>
+      <p><strong>乘坐机场大巴：</strong></p>
+      <ul>
+      <li>乘坐机场大巴３０３路，在终点站锦兴路西下车，车费10元。</li>
+      <li>再乘出租车到铁器社青旅，出租车费用大约２０元</li>
+      </ul>
+      <p><strong>乘坐出租车:</strong></p>
+      <ul>
+        <li>T请司机带您到文华路１０号，近交警四分局交罚单的地方。</li>
+        <li>大约花费75元，用时40分钟。</li>
+      </ul>
+    </div>
+  </div>
+</div>  
+<% else %>
+<div id="content_wide">
+  <div id ="north_train"class="post">
+    <h3 class="title"><a href="#north_train">From Chengdu North Railway Station (成都火车北站) to Blacksmith Hostel</a></h3>
+    <div class="entry">
+      <p><strong>By Bus:</strong></p>
+      <ul>
+        <li>
+          <p>Take Bus No.11 from the “North Railway Station Bus Stop East” (火车北站公交站东站) which is near the railway station.</p>
+          <p>It cost RMB 2 (please prepare small changes) and takes about 20 minutes.</p>
+        </li>
+        <li><p>Get off at “QING YANG XIAO QU” Stop (青羊小区) and our hostel is about 300 meters away from here.</p></li>
+        <li>
+          <p>After you get off the bus, go straight 10 meters and turn right, you are now on the Wen Hua Road (文华路).</p>
+          <p>Go straight for about 3 minutes, our hostel is on your left.</p>
+        </li>
+      </ul>
+      <p><strong>By Taxi:</strong></p>
+      <ul>
+        <li>There is a taxi stand outside the railway station.</li>
+        <li>Tell the driver to take you to No. 10 Wen Hua Road, which is near Bai Guo Lin Metro Station (文华路10号,近百果林地铁站).</li>
+        <li>It costs no more than RMB 20 and takes about 15 minutes.</li>
+      </ul>
+    </div> 
+  </div>
+
+  <div id="east_train" class="post">
+    <h3 class="title"><a href="#east_train">From Chengdu East Railway Station (成都火车东站) to Blacksmith Hostel</a></h3>
+    <div class="entry">
+      <p><strong>By Metro：</strong></p>
+      <ul>
+      <li><p>Take Metro Line 2 at “Chengdu East Railway Station” (成都东客站).</p></li>
+      <li><p>Get off at “Bai Guo Lin” Station （白果林） and go out from exit C.</p></li>
+      <li><p>You are now on the QING XI Road（青西路）which is about 300 meters away from our hostel.</p></li>
+      <li><p>Go straight and turn left at the first crossing, and you are now on the ZHONG XIN Road （中新路）.</p></li>
+      <li><p>Go straight and turn right at the fist crossing, you are on the Wen Hua Road (文华路).　</p></li>
+      <li><p>Go straight 50 meters; our hostel is on your right.</p></li>
+      </ul>
+
+
+      <p><strong>By Taxi:</strong></p>
+
+      <ul>
+      <li>There is a taxi stand outside the railway station.</li>
+      <li>Tell the driver to take you to No. 10 Wen Hua Road, which is near Bai Guo Lin Metro Station (文华路10号,近百果林地铁站).</li>
+      <li>It costs no more than RMB 40 and takes about 40 minutes.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="airport" class="post">
+    <h3 class="title"><a href="#airport">From Chengdu Shuangliu International Airport (成都双流国际机场) to Blacksmith Hostel</a></h3>
+    <div class="entry">
+      <p><strong>Pick-up Service:</strong></p>
+      <ul>
+      <li>Book either by phone or email; we will be waiting for you at the exit.</li>
+      <li>It costs RMB 70 for a minivan which can carry maximum 6 people.</li>
+      </ul>
+      <p><strong>By Bus:</strong></p>
+      <ul>
+      <li>Take airport shuttle bus No.303 and get off at the last stop, Jin Xing Road West (锦兴路西) ．</li>
+      <li>From there, take a taxi to our hostel which costs less than RMB 20.</li>
+      </ul>
+      <p><strong>By Taxi:</strong></p>
+      <ul>
+      <li>Tell the driver to take you to No. 10 Wen Hua Road, which is near Bai Guo Lin Metro Station (文华路10号,近百果林地铁站).</li>
+      <li>It costs about RMB 75 and takes about 40 minutes.</li>
+      </ul>
+    </div>
+  </div>
 </div>
+<% end %>
+
 <div id="content_wide">
   <iframe width="890" height="500" frameborder="0" scrolling="no" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=10+Wenhua+Road,+Chengdu,+Sichuan,+China&amp;aq=0&amp;oq=10+wenhua+Chengdu,+Sichuan,+China&amp;sll=30.673731,104.036348&amp;sspn=0.003239,0.005681&amp;ie=UTF8&amp;hq=&amp;hnear=Wen+Hua+Lu,+Chengdu,+Sichuan,+China&amp;t=m&amp;ll=30.673722,104.036322&amp;spn=0.036911,0.07287&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
 </div>
