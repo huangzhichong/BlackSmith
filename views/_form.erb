@@ -1,0 +1,446 @@
+<link href="structure.css" rel="stylesheet">
+<link href="form.css" rel="stylesheet">
+<script src="wufoo.js"></script>
+<form id="form2" name="form2" class="wufoo topLabel page1" autocomplete="off"
+enctype="multipart/form-data" method="post" novalidate="" action="http://reservations.bookhostels.com/hostelcd.com/hosteldetails.php"
+_lpchecked="1">
+    <ul>
+        <li id="fo2li111" class="notranslate">
+            <fieldset>
+                <legend id="title111" class="desc">
+                    Country
+                    <span id="req_111" class="req">
+                        *
+                    </span>
+                </legend>
+                <div>
+                    <input id="radioDefault_111" name="Field111" type="hidden" value="">
+                    <span>
+                        <input id="Field111_0" name="CountryChoice" type="radio" class="field radio"
+                        value="China" tabindex="1" onchange="handleInput(this);" onmouseup="handleInput(this);"
+                        checked="checked" required="">
+                        <label class="choice" for="Field111_0">
+                            China
+                        </label>
+                    </span>
+                </div>
+            </fieldset>
+        </li>
+        <li id="fo2li113" class="notranslate">
+            <fieldset>
+                <legend id="title113" class="desc">
+                    City &amp; Hostel Name
+                    <span id="req_113" class="req">
+                        *
+                    </span>
+                </legend>
+                <div>
+                    <input id="radioDefault_113" name="Field113" type="hidden" value="">
+                    <span>
+                        <input id="Field113_0" name="Choice" type="radio" class="field radio"
+                        value="Blacksmith Hostel, Chengdu" tabindex="2" onchange="handleInput(this);"
+                        onmouseup="handleInput(this);" checked="checked" required="">
+                        <label class="choice" for="Field113_0">
+                            Blacksmith Hostel, Chengdu
+                        </label>
+                    </span>
+                </div>
+            </fieldset>
+        </li>
+        <li id="fo2li105" class="date notranslate">
+            <label class="desc" id="title105" for="Field105">
+                Arrival Dates
+                <span id="req_105" class="req">
+                    *
+                </span>
+            </label>
+            <span>
+                <input id="Field105-1" name="selMonth" type="text" class="field text"
+                value='<%= Time.new.month %>' size="2" maxlength="2" tabindex="3" onkeyup="handleInput(this);"
+                onchange="handleInput(this);" required="">
+                <label for="Field105-1">
+                    MM
+                </label>
+            </span>
+            <span class="symbol">
+                /
+            </span>
+            <span>
+                <input id="Field105-2" name="selDay" type="text" class="field text"
+                value='<%= Time.new.day + 1 %>' size="2" maxlength="2" tabindex="4" onkeyup="handleInput(this);"
+                onchange="handleInput(this);" required="">
+                <label for="Field105-2">
+                    DD
+                </label>
+            </span>
+            <span class="symbol">
+                /
+            </span>
+            <span>
+                <input id="Field105" name="selYear" type="text" class="field text" value='<%= Time.new.year %>'
+                size="4" maxlength="4" tabindex="5" onkeyup="handleInput(this);" onchange="handleInput(this);"
+                required="">
+
+                <label for="Field105">
+                    YYYY
+                </label>
+            </span>
+        </li>
+        <li id="fo2li115" class="notranslate">
+            <label class="desc" id="title115" for="Field115">
+            Nights
+              <span id="req_115" class="req">*</span>
+            </label>
+            <div>
+              <select id="Field115" name="NumNights" class="field select small" onclick="handleInput(this);" onkeyup="handleInput(this);" tabindex="3"> 
+                <option value="1" selected="selected">
+                1
+                </option>
+                <% 30.times.each do |i| %>
+                <option value='<%= i+2 %>'><%= i+2 %></option>
+                <% end %> 
+              </select>
+            </div>
+        </li>
+
+        <li id="fo2li116" class="notranslate">
+            <label class="desc" id="title116" for="Field116">
+                Currency
+                <span id="req_116" class="req">
+                    *
+                </span>
+            </label>
+            <div>
+                <select id="Field116" name="Currency" class="field select medium" onclick="handleInput(this);"
+                onkeyup="handleInput(this);" tabindex="7">
+                    <option value="AUD">
+                        Australian Dollar
+                    </option>
+                    <option value="GBP">
+                        British Pound
+                    </option>
+                    <option value="CAD">
+                        Canadian Dollar
+                    </option>
+                    <option value="EUR">
+                        Euro
+                    </option>
+                    <option value="USD" selected="selected">
+                        US Dollar
+                    </option>
+                    <option value="">
+                        ----------
+                    </option>
+                    <option value="ALL">
+                        Albanian Lek
+                    </option>
+                    <option value="DZD">
+                        Algerian Dinar
+                    </option>
+                    <option value="ARS">
+                        Argentine Peso
+                    </option>
+                    <option value="AMD">
+                        Armenian Dram
+                    </option>
+                    <option value="AUD">
+                        Australian Dollar
+                    </option>
+                    <option value="AZN">
+                        Azerbaijan New Manat
+                    </option>
+                    <option value="BSD">
+                        Bahamian Dollar
+                    </option>
+                    <option value="BHD">
+                        Bahraini Dinar
+                    </option>
+                    <option value="BDT">
+                        Bangladeshi Taka
+                    </option>
+                    <option value="BZD">
+                        Belize Dollar
+                    </option>
+                    <option value="BOB">
+                        Bolivian Boliviano
+                    </option>
+                    <option value="BRL">
+                        Brazilian Real
+                    </option>
+                    <option value="GBP">
+                        British Pound
+                    </option>
+                    <option value="BND">
+                        Brunei Dollar
+                    </option>
+                    <option value="XOF">
+                        CFA Franc BCEAO
+                    </option>
+                    <option value="XAF">
+                        CFA Franc BEAC
+                    </option>
+                    <option value="XPF">
+                        CFP Franc
+                    </option>
+                    <option value="KHR">
+                        Cambodian Riel
+                    </option>
+                    <option value="CAD">
+                        Canadian Dollar
+                    </option>
+                    <option value="CLP">
+                        Chilean Peso
+                    </option>
+                    <option value="CNY">
+                        Chinese Yuan Renminbi
+                    </option>
+                    <option value="COP">
+                        Colombian Peso
+                    </option>
+                    <option value="KMF">
+                        Comoros Franc
+                    </option>
+                    <option value="CRC">
+                        Costa Rican Colon
+                    </option>
+                    <option value="HRK">
+                        Croatian Kuna
+                    </option>
+                    <option value="CZK">
+                        Czech Koruna
+                    </option>
+                    <option value="DKK">
+                        Danish Krone
+                    </option>
+                    <option value="DJF">
+                        Djibouti Franc
+                    </option>
+                    <option value="DOP">
+                        Dominican R. Peso
+                    </option>
+                    <option value="XCD">
+                        East Caribbean Dollar
+                    </option>
+                    <option value="EGP">
+                        Egyptian Pound
+                    </option>
+                    <option value="EUR">
+                        Euro
+                    </option>
+                    <option value="FJD">
+                        Fiji Dollar
+                    </option>
+                    <option value="HNL">
+                        Honduran Lempira
+                    </option>
+                    <option value="HKD">
+                        Hong Kong Dollar
+                    </option>
+                    <option value="HUF">
+                        Hungarian Forint
+                    </option>
+                    <option value="ISK">
+                        Iceland Krona
+                    </option>
+                    <option value="INR">
+                        Indian Rupee
+                    </option>
+                    <option value="IDR">
+                        Indonesian Rupiah
+                    </option>
+                    <option value="ILS">
+                        Israeli New Shekel
+                    </option>
+                    <option value="JPY">
+                        Japanese Yen
+                    </option>
+                    <option value="JOD">
+                        Jordanian Dinar
+                    </option>
+                    <option value="KZT">
+                        Kazakhstan Tenge
+                    </option>
+                    <option value="KES">
+                        Kenyan Shilling
+                    </option>
+                    <option value="KWD">
+                        Kuwaiti Dinar
+                    </option>
+                    <option value="KGS">
+                        Kyrgyzstanian Som
+                    </option>
+                    <option value="LAK">
+                        Lao Kip
+                    </option>
+                    <option value="LVL">
+                        Latvian Lats
+                    </option>
+                    <option value="LBP">
+                        Lebanese Pound
+                    </option>
+                    <option value="LTL">
+                        Lithuanian Litas
+                    </option>
+                    <option value="MYR">
+                        Malaysian Ringgit
+                    </option>
+                    <option value="MRO">
+                        Mauritanian Ouguiya
+                    </option>
+                    <option value="MUR">
+                        Mauritius Rupee
+                    </option>
+                    <option value="MXN">
+                        Mexican Peso
+                    </option>
+                    <option value="MNT">
+                        Mongolian Tugrik
+                    </option>
+                    <option value="MAD">
+                        Moroccan Dirham
+                    </option>
+                    <option value="NAD">
+                        Namibia Dollar
+                    </option>
+                    <option value="NPR">
+                        Nepalese Rupee
+                    </option>
+                    <option value="NZD">
+                        New Zealand Dollar
+                    </option>
+                    <option value="NIO">
+                        Nicaraguan Cordoba Oro
+                    </option>
+                    <option value="NOK">
+                        Norwegian Kroner
+                    </option>
+                    <option value="OMR">
+                        Omani Rial
+                    </option>
+                    <option value="PKR">
+                        Pakistan Rupee
+                    </option>
+                    <option value="PGK">
+                        Papua New Guinea Kina
+                    </option>
+                    <option value="PYG">
+                        Paraguayan Guarani
+                    </option>
+                    <option value="PEN">
+                        Peruvian Nuevo Sol
+                    </option>
+                    <option value="PHP">
+                        Philippine Peso
+                    </option>
+                    <option value="PLN">
+                        Polish Zloty
+                    </option>
+                    <option value="QAR">
+                        Qatari Rial
+                    </option>
+                    <option value="RON">
+                        Romanian New Lei
+                    </option>
+                    <option value="RUB">
+                        Russian Rouble
+                    </option>
+                    <option value="RWF">
+                        Rwandan Franc
+                    </option>
+                    <option value="WST">
+                        Samoan Tala
+                    </option>
+                    <option value="SAR">
+                        Saudi Riyal
+                    </option>
+                    <option value="SGD">
+                        Singapore Dollar
+                    </option>
+                    <option value="SOS">
+                        Somali Shilling
+                    </option>
+                    <option value="ZAR">
+                        South African Rand
+                    </option>
+                    <option value="KRW">
+                        South-Korean Won
+                    </option>
+                    <option value="LKR">
+                        Sri Lanka Rupee
+                    </option>
+                    <option value="SZL">
+                        Swaziland Lilangeni
+                    </option>
+                    <option value="SEK">
+                        Swedish Krona
+                    </option>
+                    <option value="CHF">
+                        Swiss Franc
+                    </option>
+                    <option value="TWD">
+                        Taiwan Dollar
+                    </option>
+                    <option value="TZS">
+                        Tanzanian Shilling
+                    </option>
+                    <option value="THB">
+                        Thai Baht
+                    </option>
+                    <option value="TOP">
+                        Tonga Pa'anga
+                    </option>
+                    <option value="TTD">
+                        Trinidad/Tobago Dollar
+                    </option>
+                    <option value="TND">
+                        Tunisian Dinar
+                    </option>
+                    <option value="TRY">
+                        Turkish Lira
+                    </option>
+                    <option value="USD" selected="selected">
+                        US Dollar
+                    </option>
+                    <option value="UGX">
+                        Uganda Shilling
+                    </option>
+                    <option value="UAH">
+                        Ukraine Hryvnia
+                    </option>
+                    <option value="UYU">
+                        Uruguayan Peso
+                    </option>
+                    <option value="AED">
+                        Utd. Arab Emir. Dirham
+                    </option>
+                    <option value="VUV">
+                        Vanuatu Vatu
+                    </option>
+                    <option value="VEF">
+                        Venezuelan Bolivar
+                    </option>
+                    <option value="VND">
+                        Vietnamese Dong
+                    </option>
+                </select>
+            </div>
+        </li>
+        <li class="buttons">
+            <div>
+                <input type="hidden" name="currentPage" id="currentPage" value="nx33HPrCaQPKwaqCCraKIXU1FfgrmYQualFhjQCPFkg=">
+                <input id="saveForm" name="saveForm" class="btTxt submit" type="submit"
+                value="Submit" onmousedown="doSubmitEvents();" tabindex="71">
+            </div>
+        </li>
+        <li class="hide">
+            <label for="comment">
+                Do Not Fill This Out
+            </label>
+            <textarea name="comment" id="comment" rows="1" cols="1">
+            </textarea>
+            <input type="hidden" id="idstamp" name="idstamp" value="1FfRlH8Zd7b0JSqGL0iaCkR7MLu2t2zM8QPNid434RE=">
+            <input type="hidden" id="stats" name="stats" value="{&quot;errors&quot;:0,&quot;startTime&quot;:0,&quot;endTime&quot;:0,&quot;referer&quot;:null}">
+            <input type="hidden" id="clickOrEnter" name="clickOrEnter" value="">
+        </li>
+    </ul>
+</form>
