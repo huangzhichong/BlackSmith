@@ -26,9 +26,7 @@ Released   : 20110421
 		<%if @error then %>
 			<div class="alert alert-error"><%=@error%></div>
 		<% end %>
-		<div id="page">
-			<%= yield %>
-		</div>	
+		<%= yield %>		
 	</div>
 	<div class='footer-wrapper'>
 		<%= partial :_footer %>

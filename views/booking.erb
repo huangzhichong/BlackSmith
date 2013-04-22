@@ -1,42 +1,72 @@
-<table id="content_wide">
-  <tr>
-    <td class="text_left">
-      <img src="images/phone.png" width="200px" height="200px">
-      <img src="images/email.png" width="200px" height="200px">
-    </td>
-    <td class="pic_right">
-<p><strong>Phone</strong></p>
+<% case session[:localization] %>
+<% when "ch" %>
+<div id= "three-columns">
+  <h2><a>现在预订</a></h2>
+    <div class="column">
+      <img src="images/phone.png"> 
+        <p><h3><a>电话</a></h3></p>
+        <p>028-87791376</p>
+        <p>86-28-87791376 (如果您不在中国，请加中国区号86)</p>     
+    </div>
+    <div class="column">
+      <img src="images/email.png">      
+        <p><h3><a>邮件</a></h3></p>
+        <p>blacksmithhostel@gmail.com</p>
+    </div>
+    <div class="column">
+      <img src="images/online.png">
+          <p><h3><a href="http://reservations.bookhostels.com/hostelcd.com/">在线预订</a></h3></p>
+    </div>
+</div>
+<div id ="three-columns">
+  <h2 class="title"><a>NOTICE</a></h2>
+  <div class="entry">
+    <p><strong>如果您选择通过电话或邮件方式预定房间，请提供以下信息以便我们能快速准确的为你提供订房服务：</strong></p>
+    <ul>
+      <li><p>您需要预定哪种房间？</p></li>
+      <li><p>您计划入住多少天？</p></li>
+      <li><p>您将在什么时候到达我们青旅？</p></li>
+      <li><p>您的手机号码？</p></li>
+      <li><p>您是否需要我们的接机或者接站服务？</p></li>
+    </ul>
+    <p><strong>请注意</strong></p>
+    <p>我们的入住时间是下午２点，退房时间是中午１２点。</p>
+  </div>    
+</div>
 
-<p>028-87791376</p>
-
-<p>86-28-87791376 (If you are not in China)</p>
-
-<p><strong>Email</strong></p>
-
-<p>blacksmithhostel@gmail.com</p>
-
-<p>If you choose to book our hostel by phone or email, please kindly provide the following information:</p>
-
-<ul>
-<li><p>What kind of room do you need?</p></li>
-<li><p>How many days do you want to stay?</p></li>
-<li><p>What time will you arrive at our hostel?</p></li>
-<li><p>What’s your mobile number (if you have)?</p></li>
-<li><p>Do you need pick-up service from train station or airport?</p></li>
-</ul>
-
-
-<p><strong>Please note:</strong></p>
-
-<p>Check In: 2.00 pm</p>
-
-<p>Check Out: 12.00 noon</p>
-    </td>
-  </tr>
-
-  <tr>
-    <td class="text_left"><img src="images/online.png" width="200px" height="200px"></td>
-    <td class="pic_right">   <%= partial :_form %></td>
-  </tr>
-</table>
-
+<% else %>
+<div id= "three-columns">
+  <h2><a>MAKE A RESERVATION</a></h2>
+    <div class="column">
+      <img src="images/phone.png"> 
+        <p><h3><a>Phone</a></h3></p>
+        <p>028-87791376</p>
+        <p>86-28-87791376 (If you are not in China)</p>     
+    </div>
+    <div class="column">
+      <img src="images/email.png">      
+        <p><h3><a>Email</a></h3></p>
+        <p>blacksmithhostel@gmail.com</p>
+    </div>
+    <div class="column">
+      <img src="images/online.png">
+        <p><h3><a href="http://reservations.bookhostels.com/hostelcd.com/">Online Booking</a></h3></p>
+    </div>
+</div>
+<div id ="three-columns">
+  <h2 class="title"><a>NOTICE</a></h2>
+  <div class="entry">
+    <p><strong>If you choose to book our hostel by phone or email, please kindly provide the following information:</strong></p>
+    <ul>
+    <li><p>What kind of room do you need?</p></li>
+    <li><p>How many days do you want to stay?</p></li>
+    <li><p>What time will you arrive at our hostel?</p></li>
+    <li><p>What’s your mobile number (if you have)?</p></li>
+    <li><p>Do you need pick-up service from train station or airport?</p></li>
+    </ul>
+    <p><strong>Please note:</strong></p>
+    <p>Check In: 2.00 pm</p>
+    <p>Check Out: 12.00 noon</p>
+  </div>    
+</div>
+<% end %>
