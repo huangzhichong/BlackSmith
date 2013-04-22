@@ -22,39 +22,54 @@ before do
 end
 
 not_found do
-erb :not_found
+  erb :not_found
 end
 
 get '/english' do
   session[:localization] = "en"
-  redirect "/"
+  if session[:page]
+    redirect "/#{session[:page]}"
+  else
+    redirect "/"
+  end
 end
 
 get '/chinese' do
   session[:localization] = "ch"
-  redirect "/"
+  if session[:page]
+    redirect "/#{session[:page]}"
+  else
+    redirect "/"
+  end
 end
 
 get '/' do
+  session[:page] ="index"
   erb :index
 end
 
 get '/about' do
+  session[:page] ="about"
   erb :about
 end
 
 get '/room' do
+  session[:page] ="room"
   erb :room
 end
 get '/facilities' do
+  session[:page] ="facilities"
   erb :facilities
 end
 get '/navigation' do
+  session[:page] ="navigation"
   erb :navigation
 end
 get '/neighborhood' do
+  session[:page] ="neighborhood"
   erb :neighborhood
 end
 get '/booking' do
+  session[:page] ="booking"
   erb :booking
 end
