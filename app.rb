@@ -44,7 +44,7 @@ get '/chinese' do
 end
 
 get '/' do
-  session[:page] ="index"
+  session[:page] =false
   erb :index
 end
 
