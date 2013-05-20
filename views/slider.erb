@@ -47,10 +47,10 @@ $(function() {
     <%@flag = true %>
     <% Dir.glob("static/slideshow/*").each do |file| %>
         <% if @flag %>
-            <img src= '<%= file.gsub("static","") %>' class ="active" />
+            <img src= '<%= file.gsub("static","") %>' class ="active" width ="890px"/>
             <% @flag = false %>
         <% else %>
-            <img src= '<%= file.gsub("static","") %>' />
+            <img src= '<%= file.gsub("static","") %>' width ="890px" />
         <% end %>
     <% end %>
 </div>
